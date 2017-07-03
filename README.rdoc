@@ -1,10 +1,10 @@
 You have joined a company called Future Apps as a Jr Software Developer. Your tech lead has assigned you to a project that was started by another developer, but it was stopped as he was moved to another project. Now your tech lead wants you to finish the application that he started. He has sent you an email on few things that needs to be done before the receptionist starts using it for keeping track of the contact details of vendors. 
 
-Currently there is a Vendor model that has just the attributes like the name and phone_number, here are few things that needs to be done.
+Currently there is a Vendor model that has just the attributes like the name, age and phone_number, here are few things that needs to be done.
 
 1. The application should have 2 attributes for keeping track of the Person name i.e. first_name & last_name instead of name. The thing is there are already quite a few people names in the system, if you decide to remove the column and add a new one, we’ll lose the data, hence change the name column to first name and add a new column for last name
 
-2. While saving the person details, you are now expected to add the person’s email. Validation is quite important as we’ll use this to send greetings and invoices.
+2. While saving the person details, you are now expected to add the person’s email. Validation is quite important as we’ll use this to send greetings and invoices. For some reason there is a column known as age, you ahead and remove it from the db, its not required. 
 
 3. Along with the email, we should now also keep track of the name of the business, tin number and business type. There is a possibility that one vendor will be offering services in multiple business types. 
 
