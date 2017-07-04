@@ -8,7 +8,9 @@
       <th>First_name</th>
       <th>Last_name</th>
       <th>Phone number</th>
-      <th>email</th>
+      <th>Email</th>
+      <th>Business Name</th>
+      <th>TIN_Number</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +22,8 @@
         <td><%= vendor.last_name %></td>
         <td><%= vendor.phone_number %></td>
         <td><%= vendor.email %></td>
+        <td><%= vendor.business_name %></td>
+        <td><%= vendor.tin_number %></td>
         <td><%= link_to 'Show', vendor %></td>
         <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
         <td><%= link_to 'Destroy', vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
