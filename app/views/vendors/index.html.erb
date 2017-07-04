@@ -5,7 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>First_name</th>
+      <th>Last_name</th>
       <th>Phone number</th>
       <th>Age</th>
       <th colspan="3"></th>
@@ -15,7 +16,8 @@
   <tbody>
     <% @vendors.each do |vendor| %>
       <tr>
-        <td><%= vendor.name %></td>
+        <td><%= vendor.first_name %></td>
+        <td><%= vendor.last_name %></td>
         <td><%= vendor.phone_number %></td>
         <td><%= vendor.age %></td>
         <td><%= link_to 'Show', vendor %></td>
