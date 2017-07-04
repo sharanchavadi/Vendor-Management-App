@@ -24,6 +24,7 @@ class VendorsController < ApplicationController
   # POST /vendors
   # POST /vendors.json
   def create
+
     @vendor = Vendor.new(vendor_params)
 
     respond_to do |format|
@@ -69,6 +70,6 @@ class VendorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def vendor_params
-      params.require(:vendor).permit(:first_name, :last_name, :phone_number, :email, :business_name, :tin_number)
+      params.require(:vendor).permit(:first_name, :last_name, :phone_number, :email, :business_name, :tin_number, business_type_ids: [])
     end
 end

@@ -1,5 +1,5 @@
 class BusinessType < ActiveRecord::Base
-    belongs_to :vendor
+    has_many :services
     has_many :vendors, through: :services
 
 
