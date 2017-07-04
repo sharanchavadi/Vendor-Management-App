@@ -4,7 +4,12 @@ class VendorsController < ApplicationController
   # GET /vendors
   # GET /vendors.json
   def index
-    @vendors = Vendor.all
+    if params[:search]
+      #@vendors = Vendor.where('business_name = ?', params[:search]) #need to type entire string to search
+      @vendors = Vendor.where('business_name LIKE ?', "%#{params[:search]}%") #for any a portion of string, it will search all matching values
+    else
+      @vendors = Vendor.all
+    end
   end
 
   # GET /vendors/1
